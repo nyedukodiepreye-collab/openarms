@@ -91,6 +91,13 @@ nav a:not(.btn):hover{color:var(--accent)}
 .slot.filled{border-style:solid}
 @media (max-width:640px){.slot.wide{grid-column:auto;aspect-ratio:4/3}}
 
+.photo{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.photo figcaption{padding:.9rem 1.1rem 1.1rem}
+.photo strong{display:block;font:600 1.1rem var(--display)}
+.photo span{display:block;color:var(--muted);font-size:.95rem;margin-top:.15rem}
+.gallery.photos{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+
 /* steps */
 .steps{list-style:none;margin:2.2rem 0 0;padding:0;display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));counter-reset:s}
 .steps li{counter-increment:s;padding-top:1rem;border-top:4px solid var(--purple)}
